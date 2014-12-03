@@ -154,6 +154,98 @@
         </div>
     </div>
 
+	<!--LOG-->
+	<div class="modal fade" id="Log" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center well">Barrio Chino Bolivia</h4>
+				</div>
+				<div class="modal-body">
+					<ul class="nav">
+						<li role="option">
+							<a href="#login" data-toggle="modal" data-dismiss="modal"><i class="glyphicon glyphicon-user"></i> Log In</a>
+						</li>
+						<li role="option">
+							<a href="#registro" data-toggle="modal" data-dismiss="modal"><i class="glyphicon glyphicon-pencil"></i> Registrarse</a>
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-primary btn-block" data-dismiss="modal">Close</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--LOGIN-->
+	<div class="modal fade" id="login" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center well well-sm">Log In</h4>
+				</div>
+				<form role="form">
+					<div class="modal-body">
+						<div class="form-group">
+							<div><label>USUARIO:</label></div>
+  							<div><input type="text" name="user" class="form-control" placeholder = "User Name"></div><br>
+							<div><label>CONTRASEÑA:</label></div>
+  							<div><input type="password" name="pass" class="form-control" placeholder= "Password"></div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<input  class="btn btn-primary" type="submit" value="Log In">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--REGISTRO-->
+	<div class="modal fade" id="registro" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center well well-sm">Registro</h4>
+				</div>
+				<form role="form">
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Nombre:</label>
+  							<input type="text" name = "name" class="form-control" placeholder = "First Name">
+  						</div>
+  						<div class="form-group">
+							<label>Apellido:</label>
+  							<input type="text" name = "last" class="form-control" placeholder = "Last Name">
+  						</div>
+						<div class="form-group">
+							<label>Usuario:</label>
+  							<input type="text" name = "user" class="form-control" placeholder = "UserName">
+  						</div>
+  						<div class="form-group">
+							<label>Email:</label>
+  							<input type="text" name = "email" class="form-control" placeholder = "ejemplo@dominio.com">
+  						</div>
+  						<div class="form-group">
+							<label>Contraseña:</label>
+  							<input type="password" name="pass1" class="form-control" placeholder= "Password">
+						</div>
+						<div class="form-group">
+							<label>Confirmar Contraseña:</label>
+  							<input type="password" name="pass2" class="form-control" placeholder= "Password">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<input  class="btn btn-primary" type="submit" value="Registrar">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<!--PERFIL BUTTON-->
 	<div class="modal fade" id="perfil" role="dialog">
 		<div class="modal-dialog">
@@ -164,7 +256,7 @@
 				<div class="modal-body">
 					<ul class="nav nav-tabs nav-stacked">
 						<li role="options">
-							<a href="#">
+							<a href="#Log"  data-toggle="modal" data-dismiss="modal">
 								<i class="glyphicon glyphicon-user"></i>  Entrar o Registrarse
 							</a>
 						</li>
