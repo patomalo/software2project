@@ -17,7 +17,7 @@
 	<div class="navbar navbar-default" role="navigation">
 		<div class="navbar-header">
 			<a href="#perfil" class="navbar-brand" data-toggle="modal">B.Ch.Bol.</a>
-      		<a href="#" class="navbar-my-css"><span class="glyphicon glyphicon-camera"></span></a>
+      		<a href="#camera" data-toggle="modal" class="navbar-my-css"><span class="glyphicon glyphicon-camera"></span></a>
       		<a href="#search" data-toggle="modal" class="navbar-my-css"><span class="glyphicon glyphicon-search"</span></a>
 		</div>
 	</div>
@@ -138,17 +138,135 @@
 		</div>
 	</div>
 	
+	<!-- CAMERA BUTTON -->
+    <div class="modal fade" id="camera" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center well well-sm">SELECT A PICTURE OR TAKE A PHOTO!</h4>
+                </div>
+                <div class="modal-body" align="center">
+
+                    <div id="foto"></div>
+
+                    <div id="menu">
+                        <div id="contenedorMenu">
+                            <button id='btn-foto' onClick="capturePhoto()"></button>
+                            <button id='btn-galeria' onClick="getPhoto(pictureSource.PHOTOLIBRARY)"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" data-dismiss="modal">Save</a>
+                    <a class="btn btn-primary" data-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!--LOG-->
+	<div class="modal fade" id="Log" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center well">Barrio Chino Bolivia</h4>
+				</div>
+				<div class="modal-body">
+					<ul class="nav">
+						<li role="option">
+							<a href="#login" data-toggle="modal" data-dismiss="modal"><i class="glyphicon glyphicon-user"></i> Log In</a>
+						</li>
+						<li role="option">
+							<a href="#registro" data-toggle="modal" data-dismiss="modal"><i class="glyphicon glyphicon-pencil"></i> Registrarse</a>
+						</li>
+					</ul>
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-primary btn-block" data-dismiss="modal">Close</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--LOGIN-->
+	<div class="modal fade" id="login" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center well well-sm">Log In</h4>
+				</div>
+				<form role="form">
+					<div class="modal-body">
+						<div class="form-group">
+							<div><label>USUARIO:</label></div>
+  							<div><input type="text" name="user" class="form-control" placeholder = "User Name"></div><br>
+							<div><label>CONTRASEÑA:</label></div>
+  							<div><input type="password" name="pass" class="form-control" placeholder= "Password"></div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<input  class="btn btn-primary" type="submit" value="Log In">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<!--REGISTRO-->
+	<div class="modal fade" id="registro" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title text-center well well-sm">Registro</h4>
+				</div>
+				<form role="form">
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Nombre:</label>
+  							<input type="text" name = "name" class="form-control" placeholder = "First Name">
+  						</div>
+  						<div class="form-group">
+							<label>Apellido:</label>
+  							<input type="text" name = "last" class="form-control" placeholder = "Last Name">
+  						</div>
+						<div class="form-group">
+							<label>Usuario:</label>
+  							<input type="text" name = "user" class="form-control" placeholder = "UserName">
+  						</div>
+  						<div class="form-group">
+							<label>Email:</label>
+  							<input type="text" name = "email" class="form-control" placeholder = "ejemplo@dominio.com">
+  						</div>
+  						<div class="form-group">
+							<label>Contraseña:</label>
+  							<input type="password" name="pass1" class="form-control" placeholder= "Password">
+						</div>
+						<div class="form-group">
+							<label>Confirmar Contraseña:</label>
+  							<input type="password" name="pass2" class="form-control" placeholder= "Password">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<input  class="btn btn-primary" type="submit" value="Registrar">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<!--PERFIL BUTTON-->
 	<div class="modal fade" id="perfil" role="dialog">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<img src="../image/starcraft-2.jpg" alt="200x200" class="img-circle img-responsive">
+					<img src="../img/starcraft-2.jpg" alt="200x200" class="img-circle img-responsive">
 				</div>
 				<div class="modal-body">
 					<ul class="nav nav-tabs nav-stacked">
 						<li role="options">
-							<a href="#">
+							<a href="#Log"  data-toggle="modal" data-dismiss="modal">
 								<i class="glyphicon glyphicon-user"></i>  Entrar o Registrarse
 							</a>
 						</li>
@@ -178,7 +296,7 @@
     			<p>Barrio Chino Bolivia</p>
     		</div>
     		<div class="navbar-text pull-right">
-    			<p> ChaskySoftware ©</p>
+    			<p> BKBSoftware ©</p>
     		</div>
     	</div>
     </div>
@@ -188,5 +306,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/fastclick.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 </html>
