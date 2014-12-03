@@ -19,7 +19,7 @@
 	<div class="navbar navbar-default" role="navigation">
 		<div class="navbar-header">
 			<a href="#perfil" class="navbar-brand" data-toggle="modal">B.Ch.Bol.</a>
-      		<a href="#" class="navbar-my-css"><span class="glyphicon glyphicon-camera"></span></a>
+      		<a href="#camera" data-toggle="modal" class="navbar-my-css"><span class="glyphicon glyphicon-camera"></span></a>
       		<a href="#search" data-toggle="modal" class="navbar-my-css"><span class="glyphicon glyphicon-search"</span></a>
 		</div>
 	</div>
@@ -128,6 +128,32 @@
 		</div>
 	</div>
 	
+	<!-- CAMERA BUTTON -->
+    <div class="modal fade" id="camera" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center well well-sm">SELECT A PICTURE OR TAKE A PHOTO!</h4>
+                </div>
+                <div class="modal-body" align="center">
+
+                    <div id="foto"></div>
+
+                    <div id="menu">
+                        <div id="contenedorMenu">
+                            <button id='btn-foto' onClick="capturePhoto()"></button>
+                            <button id='btn-galeria' onClick="getPhoto(pictureSource.PHOTOLIBRARY)"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-primary" data-dismiss="modal">Save</a>
+                    <a class="btn btn-primary" data-dismiss="modal">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<!--PERFIL BUTTON-->
 	<div class="modal fade" id="perfil" role="dialog">
 		<div class="modal-dialog">
@@ -178,5 +204,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
 </body>
 </html>
