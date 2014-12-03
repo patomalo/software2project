@@ -25,48 +25,45 @@
 	</div>
 
 	<!--PRINCIPAL-->
-	<div class="container-fluid" style="overflow=scroll">
+	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>CLIENTE: APEREZ</h3>
-				<h4>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star"></i>
-					<i class="glyphicon glyphicon-star-empty"></i>
-					<i class="glyphicon glyphicon-star-empty"></i>
-				</h4>
+				<h3 class="page-header">User:  AGORILA</h3>
+				<a href="#" class="btn btn-primary"><i class="glyphicon glyphicon-plus-sign"></i> Agregar Nuevo</a>
 			</div>
+			<div class="row placeholder">
+				<div class="col-xs-6 col-sm-3 placeholder">
+					<img data-src="" src="../img/6sonido.jpg" alt="200x200" class="img-rounded img-responsive">
+					<div class="text-center">
+						<a href="#" class="btn btn-primary">Update</a>
+						<a href="#" class="btn btn-default">Delete</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 placeholder">
+					<img data-src="" src="../img/9xbox1.jpg" alt="200x200" class="img-rounded img-responsive">
+					<div class="text-center">
+						<a href="#" class="btn btn-primary">Update</a>
+						<a href="#" class="btn btn-default">Delete</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 placeholder">
+					<img data-src="" src="../img/10playstation4.jpg" alt="200x200" class="img-rounded img-responsive">
+					<div class="text-center">
+						<a href="#" class="btn btn-primary">Update</a>
+						<a href="#" class="btn btn-default">Delete</a>
+					</div>
+				</div>
+				<div class="col-xs-6 col-sm-3 placeholder">
+					<img data-src="" src="../img/11cinecasa.jpg" alt="200x200" class="img-rounded img-responsive">
+					<div class="text-center">
+						<a href="#" class="btn btn-primary">Update</a>
+						<a href="#" class="btn btn-default">Delete</a>
+					</div>
+				</div>
+			</dive>
 		</div>
-		<div class="row placeholder">
-			<div class="col-xs-12">
-				<img data-src="" src="../img/15toshiba.jpg" alt="200x200" class="img-thumbnail img-responsive">
-				<h3 class="text-center">LAPTOP TOSHIBA</h3>
-				<label>Precio: 3000 Bs</label>
-			</div>
-		</div>
-		<div class="row placeholder">
-			<div class="col-sm-12">
-				<label>Description:</label>
-				<p>Bella laptop casi nueva 9/10, se vende de ocacion por razones de viaje</p>
-			</div>
-		</div>
-		<div class="row placeholder">
-			<div class="col-xs-4">
-
-				<a href="#perfil" class="btn btn-primary" data-toggle="modal">Buy</a>
-				<!-- <input class="btn btn-primary" type="submit" name="product" value="Buy"> -->
-			</div>
-
-			<!-- <div class="col-xs-4">
-				<input class="btn btn-primary" type="submit" name="product" value="Nose">
-			</div>
-			<div class="col-xs-4">
-				<input class="btn btn-primary" type="submit" name="product" value="Chat">
-			</div> -->
-		</div>
+		
 	</div>
-
 	<!--FIN TE LA PRINCIPAL-->
 
 	<!--SEARCH BUTTON-->
@@ -210,8 +207,7 @@
 					</div>
 					<div class="modal-footer">
 						<a class="btn btn-default" data-dismiss="modal">Close</a>
-						<a href="#" class="btn btn-primary" onClick="viewProduct(3)">Log In</a>
-						<!-- <input  class="btn btn-primary" type="submit" value="Log In"> -->
+						<input  class="btn btn-primary" type="submit" value="Log In">
 					</div>
 				</form>
 			</div>
@@ -266,22 +262,23 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
-					<img src="../img/starcraft-2.jpg" alt="200x200" class="img-circle img-responsive">
+					<img src="../img/agorila.jpg" alt="200x200" class="img-circle img-responsive">
+					<h4 class="modal-title text-center">AGORILA</h4>
 				</div>
 				<div class="modal-body">
 					<ul class="nav nav-tabs nav-stacked">
 						<li role="options">
-							<a href="#Log"  data-toggle="modal" data-dismiss="modal">
-								<i class="glyphicon glyphicon-user"></i>  Entrar o Registrarse
+							<a href="#">
+								<i class="glyphicon glyphicon-user"></i>  My Account
 							</a>
 						</li>
-						<li role="options" class="disabled">
+						<li role="options">
 							<a href="#">
 								<i class="glyphicon glyphicon-arrow-up"></i>  Subir Producto
 							</a>
 						</li>
-						<li role="options" class="disabled">
-							<a href="#">
+						<li role="options">
+							<a href="#" onClick="viewProduct(4)">
 								<i class="glyphicon glyphicon-folder-open"></i>   Mis Productos
 							</a>
 						</li>
