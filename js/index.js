@@ -59,5 +59,7 @@ function onFail(message) {
 }
 
 function viewProduct(id) {
-	window.location='view/product.html';
+	if(id == 1) window.location='view/product.html';
+    if(id == 2) window.location='view/index2.html';
+    if(id == 3) window.location='product2.html';
 }

@@ -12,6 +12,8 @@
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="../js/index.js"></script>
 </head>
 <body>
 	<div class="navbar navbar-default" role="navigation">
@@ -26,7 +28,7 @@
 	<div class="container-fluid" style="overflow=scroll">
 		<div class="row">
 			<div class="col-xs-12">
-				<h3>CLIENTE: NICKNAME</h3>
+				<h3>CLIENTE: APEREZ</h3>
 				<h4>
 					<i class="glyphicon glyphicon-star"></i>
 					<i class="glyphicon glyphicon-star"></i>
@@ -38,20 +40,22 @@
 		</div>
 		<div class="row placeholder">
 			<div class="col-xs-12">
-				<img data-src="" src="../image/starcraft-2.jpg" alt="200x200" class="img-thumbnail img-responsive">
-				<h3 class="text-center">PRODUCT NAME</h3>
-				<label>Precio: 200Bs</label>
+				<img data-src="" src="../img/15toshiba.jpg" alt="200x200" class="img-thumbnail img-responsive">
+				<h3 class="text-center">LAPTOP TOSHIBA</h3>
+				<label>Precio: 3000 Bs</label>
 			</div>
 		</div>
 		<div class="row placeholder">
 			<div class="col-sm-12">
 				<label>Description:</label>
-				<p>dota loca asi es como jugamos dota dota loca asi es como jugamos dota dota loca asi es como jugamos dota</p>
+				<p>Bella laptop casi nueva 9/10, se vende de ocacion por razones de viaje</p>
 			</div>
 		</div>
 		<div class="row placeholder">
 			<div class="col-xs-4">
-				<input class="btn btn-primary" type="submit" name="product" value="Buy">
+
+				<a href="#perfil" class="btn btn-primary" data-toggle="modal">Buy</a>
+				<!-- <input class="btn btn-primary" type="submit" name="product" value="Buy"> -->
 			</div>
 
 			<!-- <div class="col-xs-4">
@@ -206,7 +210,8 @@
 					</div>
 					<div class="modal-footer">
 						<a class="btn btn-default" data-dismiss="modal">Close</a>
-						<input  class="btn btn-primary" type="submit" value="Log In">
+						<a href="#" class="btn btn-primary" onClick="viewProduct(3)">Log In</a>
+						<!-- <input  class="btn btn-primary" type="submit" value="Log In"> -->
 					</div>
 				</form>
 			</div>
